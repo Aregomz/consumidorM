@@ -3,7 +3,7 @@ import axios from 'axios';
 
 const initBroker = async () => {
     try {
-        let connection = await amqplib.connect('amqp://54.92.215.182');
+        let connection = await amqplib.connect('amqp://44.221.201.187');
         let ch = await connection.createChannel();
     
         ch.consume('payments', async (msg: any) => {
